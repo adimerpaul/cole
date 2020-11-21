@@ -30,6 +30,11 @@ class UserController extends Controller
         if ($e->count()>=1){
             return "EXISTENTE";
         }else{
+            if ($request->hasFile('foto')){
+                $url=$request->file("foto")->store("fotos");
+            }else{
+                $url="";
+            }
         $d=new User();
         $d->paterno=$request->paterno;
         $d->materno=$request->materno;
@@ -45,6 +50,8 @@ class UserController extends Controller
         $d->programacion=$request->programacion;
         $d->robotica=$request->robotica;
         $d->capacitacion=$request->capacitacion;
+        $d->colegio=$request->colegio;
+        $d->foto=$url;
         $d->password= Hash::make( $request->ci);
         $d->save();
         return $d;

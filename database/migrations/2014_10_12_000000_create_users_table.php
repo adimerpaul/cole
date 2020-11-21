@@ -29,6 +29,8 @@ class CreateUsersTable extends Migration
             $table->string('programacion');
             $table->string('robotica');
             $table->string('capacitacion');
+            $table->string('colegio');
+            $table->string('foto');
             $table->string('tipo')->default('ESTUDIANTE');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
