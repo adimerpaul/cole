@@ -358,7 +358,7 @@
                         <input type="file" class="form-control" @change="updateFile">
                     </div>
                 </div>
-                <button class="btn btn-success btn-block my-3" type="submit" >
+                <button :disabled="d" class="btn btn-success btn-block my-3" type="submit" >
                     <i class="fa fa-save"></i> Realizar inscripcion
                 </button>
             </form>
@@ -377,6 +377,7 @@ export default {
             dato:{},
             escribir:false,
             imagen:null,
+            d:false,
         }
     },
     mounted() {
@@ -413,6 +414,7 @@ export default {
                     //     'Correctamente',
                     //     'success'
                     // );
+                    this.d=true;
                     let data= new FormData();
                     data.append('paterno',this.dato.paterno)
                     data.append('materno',this.dato.materno)
@@ -432,7 +434,8 @@ export default {
                     data.append('email',this.dato.email)
 
                     axios.post('/user',data).then(res=>{
-                        console.log(res.data);
+                        // console.log(res.data);
+                        this.d=false;
                         if (res.data=="EXISTENTE"){
                             this.$fire({
                                 title: "EXISTENTE",

@@ -2320,7 +2320,8 @@ __webpack_require__.r(__webpack_exports__);
     return {
       dato: {},
       escribir: false,
-      imagen: null
+      imagen: null,
+      d: false
     };
   },
   mounted: function mounted() {
@@ -2362,6 +2363,7 @@ __webpack_require__.r(__webpack_exports__);
           //     'Correctamente',
           //     'success'
           // );
+          _this.d = true;
           var data = new FormData();
           data.append('paterno', _this.dato.paterno);
           data.append('materno', _this.dato.materno);
@@ -2380,7 +2382,8 @@ __webpack_require__.r(__webpack_exports__);
           data.append('foto', _this.imagen);
           data.append('email', _this.dato.email);
           axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/user', data).then(function (res) {
-            console.log(res.data);
+            // console.log(res.data);
+            _this.d = false;
 
             if (res.data == "EXISTENTE") {
               _this.$fire({
@@ -43183,7 +43186,17 @@ var render = function() {
               2
             ),
             _vm._v(" "),
-            _vm._m(15)
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-success btn-block my-3",
+                attrs: { disabled: _vm.d, type: "submit" }
+              },
+              [
+                _c("i", { staticClass: "fa fa-save" }),
+                _vm._v(" Realizar inscripcion\n            ")
+              ]
+            )
           ]
         )
       ])
@@ -43368,22 +43381,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", [_c("b", [_vm._v("Subir fotografia del pago?")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass: "btn btn-success btn-block my-3",
-        attrs: { type: "submit" }
-      },
-      [
-        _c("i", { staticClass: "fa fa-save" }),
-        _vm._v(" Realizar inscripcion\n            ")
-      ]
-    )
   }
 ]
 render._withStripped = true
