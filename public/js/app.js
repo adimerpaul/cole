@@ -2314,6 +2314,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2375,7 +2376,7 @@ __webpack_require__.r(__webpack_exports__);
           data.append('celular', _this.dato.celular);
           data.append('direccion', _this.dato.direccion);
           data.append('curso', _this.dato.curso);
-          data.append('programacion', _this.dato.programacion);
+          data.append('categoria', _this.dato.categoria);
           data.append('robotica', _this.dato.robotica);
           data.append('capacitacion', _this.dato.capacitacion);
           data.append('colegio', _this.dato.colegio);
@@ -42918,22 +42919,22 @@ var render = function() {
                                   {
                                     name: "model",
                                     rawName: "v-model",
-                                    value: _vm.dato.programacion,
-                                    expression: "dato.programacion"
+                                    value: _vm.dato.categoria,
+                                    expression: "dato.categoria"
                                   }
                                 ],
                                 staticClass: "form-check-input",
                                 attrs: {
                                   type: "radio",
-                                  name: "programacion",
-                                  id: "programacion1",
+                                  name: "categoria",
+                                  id: "categoria1",
                                   value:
                                     "Categoría A: Programación. Nivel Básico",
                                   required: ""
                                 },
                                 domProps: {
                                   checked: _vm._q(
-                                    _vm.dato.programacion,
+                                    _vm.dato.categoria,
                                     "Categoría A: Programación. Nivel Básico"
                                   )
                                 },
@@ -42941,7 +42942,7 @@ var render = function() {
                                   change: function($event) {
                                     return _vm.$set(
                                       _vm.dato,
-                                      "programacion",
+                                      "categoria",
                                       "Categoría A: Programación. Nivel Básico"
                                     )
                                   }
@@ -42959,22 +42960,22 @@ var render = function() {
                                   {
                                     name: "model",
                                     rawName: "v-model",
-                                    value: _vm.dato.programacion,
-                                    expression: "dato.programacion"
+                                    value: _vm.dato.categoria,
+                                    expression: "dato.categoria"
                                   }
                                 ],
                                 staticClass: "form-check-input",
                                 attrs: {
                                   type: "radio",
-                                  name: "programacion",
-                                  id: "programacion2",
+                                  name: "categoria",
+                                  id: "categoria2",
                                   value:
                                     "Categoría B: Programación. Nivel Avanzad",
                                   required: ""
                                 },
                                 domProps: {
                                   checked: _vm._q(
-                                    _vm.dato.programacion,
+                                    _vm.dato.categoria,
                                     "Categoría B: Programación. Nivel Avanzad"
                                   )
                                 },
@@ -42982,7 +42983,7 @@ var render = function() {
                                   change: function($event) {
                                     return _vm.$set(
                                       _vm.dato,
-                                      "programacion",
+                                      "categoria",
                                       "Categoría B: Programación. Nivel Avanzad"
                                     )
                                   }
@@ -42999,60 +43000,21 @@ var render = function() {
                               {
                                 name: "model",
                                 rawName: "v-model",
-                                value: _vm.dato.programacion,
-                                expression: "dato.programacion"
+                                value: _vm.dato.categoria,
+                                expression: "dato.categoria"
                               }
                             ],
                             staticClass: "form-check-input",
                             attrs: {
                               type: "radio",
-                              name: "programacion",
-                              id: "programacion3",
-                              value: "NINGUNO",
-                              required: ""
-                            },
-                            domProps: {
-                              checked: _vm._q(_vm.dato.programacion, "NINGUNO")
-                            },
-                            on: {
-                              change: function($event) {
-                                return _vm.$set(
-                                  _vm.dato,
-                                  "programacion",
-                                  "NINGUNO"
-                                )
-                              }
-                            }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(5)
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "col-md-6 mb-6" }, [
-                        _vm._m(6),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "form-check" }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.dato.robotica,
-                                expression: "dato.robotica"
-                              }
-                            ],
-                            staticClass: "form-check-input",
-                            attrs: {
-                              type: "radio",
-                              name: "robotica",
-                              id: "robotica1",
+                              name: "categoria",
+                              id: "categoria4",
                               value: "Categoría C: Robótica",
                               required: ""
                             },
                             domProps: {
                               checked: _vm._q(
-                                _vm.dato.robotica,
+                                _vm.dato.categoria,
                                 "Categoría C: Robótica"
                               )
                             },
@@ -43060,53 +43022,24 @@ var render = function() {
                               change: function($event) {
                                 return _vm.$set(
                                   _vm.dato,
-                                  "robotica",
+                                  "categoria",
                                   "Categoría C: Robótica"
                                 )
                               }
                             }
                           }),
                           _vm._v(" "),
-                          _vm._m(7)
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "form-check" }, [
-                          _c("input", {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.dato.robotica,
-                                expression: "dato.robotica"
-                              }
-                            ],
-                            staticClass: "form-check-input",
-                            attrs: {
-                              type: "radio",
-                              name: "robotica",
-                              id: "robotica2",
-                              value: "NINGUNO",
-                              required: ""
-                            },
-                            domProps: {
-                              checked: _vm._q(_vm.dato.robotica, "NINGUNO")
-                            },
-                            on: {
-                              change: function($event) {
-                                return _vm.$set(_vm.dato, "robotica", "NINGUNO")
-                              }
-                            }
-                          }),
-                          _vm._v(" "),
-                          _vm._m(8)
+                          _vm._m(5)
                         ])
                       ])
                     ],
                 _vm._v(" "),
-                _vm._m(9),
+                _vm._m(6),
+                _vm._v(" "),
+                _vm._m(7),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-md-4 mb-4" }, [
-                  _vm._m(10),
+                  _vm._m(8),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-check" }, [
                     _c("input", {
@@ -43136,7 +43069,7 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
-                    _vm._m(11)
+                    _vm._m(9)
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-check" }, [
@@ -43167,14 +43100,14 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
-                    _vm._m(12)
+                    _vm._m(10)
                   ])
                 ]),
                 _vm._v(" "),
-                _vm._m(13),
+                _vm._m(11),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-md-4 mb-4" }, [
-                  _vm._m(14),
+                  _vm._m(12),
                   _vm._v(" "),
                   _c("input", {
                     staticClass: "form-control",
@@ -43265,7 +43198,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", [_c("b", [_vm._v("Programacion")])])
+    return _c("label", [_c("b", [_vm._v("Categoria")])])
   },
   function() {
     var _vm = this
@@ -43273,7 +43206,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "form-check-label", attrs: { for: "programacion1" } },
+      { staticClass: "form-check-label", attrs: { for: "categoria1" } },
       [_c("b", [_vm._v("Categoría A: Programación. Nivel Básico.")])]
     )
   },
@@ -43283,7 +43216,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "form-check-label", attrs: { for: "programacion2" } },
+      { staticClass: "form-check-label", attrs: { for: "categoria2" } },
       [_c("b", [_vm._v("Categoría B: Programación. Nivel Avanzado.")])]
     )
   },
@@ -43293,34 +43226,8 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "form-check-label", attrs: { for: "programacion2" } },
-      [_c("b", [_vm._v("Ninguno.")])]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", [_c("b", [_vm._v("Robotica")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "label",
-      { staticClass: "form-check-label", attrs: { for: "robotica1" } },
+      { staticClass: "form-check-label", attrs: { for: "categoria4" } },
       [_c("b", [_vm._v("Categoría C: Robótica. ")])]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "label",
-      { staticClass: "form-check-label", attrs: { for: "robotica2" } },
-      [_c("b", [_vm._v("Ninguno.")])]
     )
   },
   function() {
@@ -43329,7 +43236,68 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-12 mb-12" }, [
       _c("blockquote", { staticClass: "blockquote" }, [
-        _c("p", { staticClass: "mb-0" }, [_vm._v("III. CAPACITACIÓN")]),
+        _c("p", { staticClass: "mb-0" }, [_vm._v("III. GRUPOS DE WHATSAPP")]),
+        _vm._v(" "),
+        _c("footer", { staticClass: "blockquote-footer" }, [
+          _c("label", [
+            _c("b", [_vm._v("Categoría A: Programación. Nivel Básico")])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://chat.whatsapp.com/E8B33BTpzyFIJbdiXROfWp"
+              }
+            },
+            [_vm._v("https://chat.whatsapp.com/E8B33BTpzyFIJbdiXROfWp")]
+          ),
+          _c("br"),
+          _vm._v(" "),
+          _c("label", [
+            _c("b", [_vm._v("Categoría B: Programación. Nivel Avanzado.")])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://chat.whatsapp.com/IO4RI6WRQHwBieJERRI8xz"
+              }
+            },
+            [_vm._v("https://chat.whatsapp.com/IO4RI6WRQHwBieJERRI8xz")]
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("label", [_c("b", [_vm._v("Categoría C: Robótica")])]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://chat.whatsapp.com/LWeodmlrHxB31vajHsk7jI"
+              }
+            },
+            [_vm._v("https://chat.whatsapp.com/LWeodmlrHxB31vajHsk7jI")]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12 mb-12" }, [
+      _c("blockquote", { staticClass: "blockquote" }, [
+        _c("p", { staticClass: "mb-0" }, [_vm._v("IV. CAPACITACIÓN")]),
         _vm._v(" "),
         _c("footer", { staticClass: "blockquote-footer" }, [
           _vm._v(

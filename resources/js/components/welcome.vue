@@ -288,46 +288,47 @@
                     </div>
                     <template v-else>
                     <div class="col-md-6 mb-6">
-                        <label ><b>Programacion</b></label>
+                        <label ><b>Categoria</b></label>
                         <div class="form-check" v-if="dato.curso=='2do de Secundaria'||dato.curso=='3ro de Secundaria'||dato.curso=='4to de Secundaria'||dato.curso=='5to de Secundaria'">
-                            <input class="form-check-input" type="radio" name="programacion" id="programacion1" value="Categoría A: Programación. Nivel Básico" v-model="dato.programacion" required>
-                            <label class="form-check-label" for="programacion1">
+                            <input class="form-check-input" type="radio" name="categoria" id="categoria1" value="Categoría A: Programación. Nivel Básico" v-model="dato.categoria" required>
+                            <label class="form-check-label" for="categoria1">
                                 <b>Categoría A: Programación. Nivel Básico.</b>
                             </label>
                         </div>
                         <div class="form-check" v-if="dato.curso=='6to de Secundaria'">
-                            <input class="form-check-input" type="radio" name="programacion" id="programacion2" value="Categoría B: Programación. Nivel Avanzad" v-model="dato.programacion" required>
-                            <label class="form-check-label" for="programacion2">
+                            <input class="form-check-input" type="radio" name="categoria" id="categoria2" value="Categoría B: Programación. Nivel Avanzad" v-model="dato.categoria" required>
+                            <label class="form-check-label" for="categoria2">
                                 <b>Categoría B: Programación. Nivel Avanzado.</b>
                             </label>
                         </div>
-                        <div class="form-check" >
-                            <input class="form-check-input" type="radio" name="programacion" id="programacion3" value="NINGUNO" v-model="dato.programacion" required>
-                            <label class="form-check-label" for="programacion2">
-                                <b>Ninguno.</b>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-6">
-                        <label><b>Robotica</b></label>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robotica" id="robotica1" value="Categoría C: Robótica" v-model="dato.robotica" required>
-                            <label class="form-check-label" for="robotica1">
+                            <input class="form-check-input" type="radio" name="categoria" id="categoria4" value="Categoría C: Robótica" v-model="dato.categoria" required>
+                            <label class="form-check-label" for="categoria4">
                                 <b>Categoría C: Robótica. </b>
                             </label>
                         </div>
-                        <div class="form-check" >
-                            <input class="form-check-input" type="radio" name="robotica" id="robotica2" value="NINGUNO" v-model="dato.robotica" required>
-                            <label class="form-check-label" for="robotica2">
-                                <b>Ninguno.</b>
-                            </label>
-                        </div>
+
                     </div>
                     </template>
+                    <div class="col-md-12 mb-12">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">III. GRUPOS DE WHATSAPP</p>
+                            <footer class="blockquote-footer">
+                                <label ><b>Categoría A: Programación. Nivel Básico</b></label> <br>
+                                <a href="https://chat.whatsapp.com/E8B33BTpzyFIJbdiXROfWp">https://chat.whatsapp.com/E8B33BTpzyFIJbdiXROfWp</a><br>
+                                <label ><b>Categoría B: Programación. Nivel Avanzado.</b></label> <br>
+                                <a href="https://chat.whatsapp.com/IO4RI6WRQHwBieJERRI8xz">https://chat.whatsapp.com/IO4RI6WRQHwBieJERRI8xz</a>
+                                <br>
+                                <label ><b>Categoría C: Robótica</b></label> <br>
+                                <a href="https://chat.whatsapp.com/LWeodmlrHxB31vajHsk7jI">https://chat.whatsapp.com/LWeodmlrHxB31vajHsk7jI</a>
+
+                            </footer>
+                        </blockquote>
+                    </div>
 
                 <div class="col-md-12 mb-12">
                     <blockquote class="blockquote">
-                        <p class="mb-0">III. CAPACITACIÓN</p>
+                        <p class="mb-0">IV. CAPACITACIÓN</p>
                         <footer class="blockquote-footer">
                             La capacitación se llevará a cabo por la plataforma virtual de la carrera de Ingeniería de Sistemas e Ingeniería
                             Informática.
@@ -426,7 +427,7 @@ export default {
                     data.append('celular',this.dato.celular)
                     data.append('direccion',this.dato.direccion)
                     data.append('curso',this.dato.curso)
-                    data.append('programacion',this.dato.programacion)
+                    data.append('categoria',this.dato.categoria)
                     data.append('robotica',this.dato.robotica)
                     data.append('capacitacion',this.dato.capacitacion)
                     data.append('colegio',this.dato.colegio)

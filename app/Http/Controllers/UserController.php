@@ -26,10 +26,10 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $e=User::where('ci',$request->ci)->get();
-        if ($e->count()>=1){
-            return "EXISTENTE";
-        }else{
+//        $e=User::where('ci',$request->ci)->get();
+//        if ($e->count()>=1){
+//            return "EXISTENTE";
+//        }else{
             if ($request->hasFile('foto')){
                 $url=$request->file("foto")->store("fotos");
             }else{
@@ -47,15 +47,16 @@ class UserController extends Controller
         $d->direccion=$request->direccion;
         $d->email=$request->email;
         $d->curso=$request->curso;
-        $d->programacion=$request->programacion;
-        $d->robotica=$request->robotica;
+        $d->categoria=$request->categoria;
+//        $d->programacion=$request->programacion;
+//        $d->robotica=$request->robotica;
         $d->capacitacion=$request->capacitacion;
         $d->colegio=$request->colegio;
         $d->foto=$url;
         $d->password= Hash::make( $request->ci);
         $d->save();
         return $d;
-        }
+//        }
 
     }
 

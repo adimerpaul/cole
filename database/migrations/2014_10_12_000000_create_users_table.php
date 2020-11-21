@@ -21,13 +21,13 @@ class CreateUsersTable extends Migration
             $table->string('nombres');
             $table->string('fechanac');
             $table->string('sexo');
-            $table->string('ci')->unique();
+            $table->string('ci');
             $table->string('fijo')->nullable();
             $table->string('celular');
             $table->string('direccion');
             $table->string('curso');
-            $table->string('programacion');
-            $table->string('robotica');
+            $table->string('categoria');
+//            $table->string('robotica');
             $table->string('capacitacion');
             $table->string('colegio');
             $table->string('foto');
