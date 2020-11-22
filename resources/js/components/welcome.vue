@@ -165,8 +165,8 @@
                     <div class="col-md-3 mb-3">
                         <label for="Colegio" style="width: 100%;display: flex;justify-content: space-between">
                             <div>Colegio</div>
-                            <small v-if="!escribir" @click="escribir=!escribir">Escribir</small>
-                            <small v-if="escribir" @click="escribir=!escribir">Selecccionar</small>
+                            <small v-if="!escribir" @click="escribir=!escribir;dato.colegio=''"><u>Otro colegio</u></small>
+                            <small v-if="escribir" @click="escribir=!escribir"><u>Selecccionar</u></small>
                         </label>
                         <!--                        <select id="Colegio"  required>-->
                         <!--                            <option value="3ro de Secundaria">3ro de Secundaria</option>-->
@@ -356,7 +356,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <label><b>Subir fotografia del pago?</b></label>
-                        <input type="file" class="form-control" @change="updateFile">
+                        <input type="file" class="form-control" @change="updateFile" required>
                     </div>
                 </div>
                 <button :disabled="d" class="btn btn-success btn-block my-3" type="submit" >
